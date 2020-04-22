@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    body
+    {font-family: sans-serif;}
+    </style>
+</head>
+<body>
+
+<form>
+<label>Enter first number:</label><br>
+<input id="no1" type="number"><br>
+<label>Enter second number:</label><br>
+<input id="no2" type="number"><br>
+</form>
+Result:<br>
+<p id="res"></p>
+<button id="mul">multiplication</button><button id="add">addition</button>
+</body>
+<script>
+var mul=document.getElementById("mul")
+mul.addEventListener('click',mull;
+function mull()
+{
+let a=document.getElementById("no1");
+let b=document.getElementById("no2");
+let c=document.getElementById("res");
+c.innerHTML=a.value*b.value;
+}
+var add=document.getElementById("add")
+add.addEventListener('click',addd);
+function addd()
+{
+let a=document.getElementById("no1");
+let b=document.getElementById("no2");
+let c=document.getElementById("res");
+c.innerHTML=Number(a.value)+Number(b.value);
+}
+</script>
+</html>

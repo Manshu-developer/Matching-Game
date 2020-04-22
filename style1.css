@@ -1,0 +1,91 @@
+body
+{
+    width: 30%;
+}
+.section{
+	 width: 980px;
+display: grid;
+grid-template-rows: 50px;
+grid-template-columns: (12,1fr);
+
+}
+.section3
+{
+    grid-column: 9/11;
+    height: 50px;
+    color: aliceblue;
+    margin-right: 600px;
+    width: 180px;
+    margin-bottom: 7px;
+    font-size: 30px;
+}
+h2
+{
+    height: 50px;
+    grid-column: 5/7;
+    margin-right: 450px;
+    margin-top: 50px;
+    font-size: 40px;
+    margin-left: 450px;
+    width: 400px;
+    text-align: center;
+}
+.section1
+{    width: 150px;
+    color: aliceblue;
+    height: 50px;
+    grid-column: 1/3;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+body
+{
+   background: url('Images/Tournament_of_Power_Arena.png');        
+    font-family: sans-serif;
+}
+h2
+{
+    color:white;
+}
+.flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    margin-left: 320px;
+    
+}
+.flex > .parent
+{width: 150px;
+height: 150px;
+margin: 5px;
+background-size: 150px 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 3s;
+}
+.back
+{
+    width: 150px;
+    height: 150px;
+    background-size: 150px 150px;
+    position: absolute;
+    transform: rotateY(180deg);
+}
+.front
+{
+    background: url('Images/why-dragon-ball-super-is-ending-at-the-right-time-1078017-1280x0.jpeg');
+    width: 150px;
+    height: 150px;
+    background-size: 150px 150px;
+    z-index: 2;
+    position: absolute;
+}
+.selected
+{
+    transform: rotateY(180deg);
+}
+.invisible
+{transition: transform 2s;
+visibility: hidden;
+}

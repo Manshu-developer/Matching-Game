@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <p id="day"></p>
+  <p id="time"></p>
+  <p id="date"></p>
+<script>
+var a=document.getElementById('day');
+var b=document.getElementById('time');
+var c,d,e,f,g,h;
+c=new Date();
+c.getDay();
+var arr=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+function date()
+{   
+             a.innerHTML="Today is: "+arr[c.getDay()-1];
+                    
+                    f=new Date();
+            if(f.getHours()>12)
+                    {
+                    g=f.getHours()-12;
+                    b.innerHTML="Current Time is: "+g+"PM:"+f.getMinutes()+":"+f.getSeconds();
+            }
+     else if(f.getHours()===12)
+         {
+               b.innerHTML="Current Time is: "+f.getHours()+"PM:"+f.getMinutes()+":"+f.getSeconds();
+         }
+     else{
+            b.innerHTML="Current Time is: "+f.getHours()+"AM:"+f.getMinutes()+":"+f.getSeconds();
+     }
+            } date();
+    var da=document.getElementById('date');
+    var h=new Date();
+    if(h.getMonth()<10)
+    {da.innerHTML="0"+h.getMonth()+"-"+h.getDate()+"-"+h.getFullYear();}
+    else{ da.innerHTML=h.getMonth()+"- 0"+h.getDate()+"-"+h.getFullYear();}
+
+    /*                   
+    var a;
+undefined
+a=10;
+10
+a=(a<20)?9:0;
+9**/
+
+</script>  
+</body>
+</html>
